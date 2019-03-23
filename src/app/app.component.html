@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <app-header></app-header>
+<courses></courses>
+<router-outlet></router-outlet> -->
+<!-- <div class="container">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let post of posts">
+            {{post.login}}
+            <img src="{{post.avatar_url}}" alt=""> -->
+            <!-- <h1>{{post.title}}</h1>
+            <p>{{post.body}}</p>
+        </li>
+    </ul>
+
+</div> --> 
+<app-aboutservice></app-aboutservice>
+<app-child[myInput]="myInputText"></app-child>
+<div class="container">
+   <p>{{text | summary}}</p>
+   <input type="text" class="form-control mt-2"
+   #title  (keyup.enter)="createData(title)">
+   <ul class="list-group">
+       <li  class="list-group-item mt-2" *ngFor="let post of posts">
+           <h1>{{post.title}}</h1>
+           <P>{{post.body}}</P>
+           <button class="btn btn-danger float-right" (click)="removeData(post)">delete  </button>
+       </li>
+   </ul>
+</div> 
